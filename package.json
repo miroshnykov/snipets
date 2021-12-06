@@ -1,0 +1,26 @@
+{
+  "name": "snipets",
+  "version": "1.0.0",
+  "description": "> some examples",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "tsc & node ./dist/object.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miroshnykov/snipets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miroshnykov/snipets/issues"
+  },
+  "homepage": "https://github.com/miroshnykov/snipets#readme"
+}
