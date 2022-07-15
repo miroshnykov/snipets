@@ -151,59 +151,6 @@ class2 = new Model('honda', 'accord')
 // console.log(arraySum([[1, 2, [3, 4]], [9], [10, 12]]));
 // sorting
 
-function quickSort(array) {
-    // console.log('array length:', array.length)
-    if (array.length <= 1) {
-        console.log('array.length <= 1:', array)
-        // console.log('count:', count)
-        return array
-    }
-    let pivotIndex = Math.floor(array.length / 2);
-    let pivot = array[pivotIndex]
-    console.log('pivot:', pivot)
-    let less = []
-    let greater = []
-    let count=0
-    for (let i = 0; i < array.length; i++) {
-        count += 1
-        if (i === pivotIndex)
-            continue
-        if (array[i] < pivot) {
-            console.log('less:', array)
-            less.push(array[i])
-        } else {
-            console.log('greater:', greater)
-            greater.push(array[i])
-        }
-    }
-    return [...quickSort(less), pivot, ...quickSort(greater)]
-}
-
-let quickSortArr = [1,100,2,300]
-let quickSortRes = quickSort(quickSortArr)
-console.log('quickSortRes:', quickSortRes)
-
-// найти минимальный и мксимальный элеменет быстро
-function hignMinMaxNumberOneStep(numbers) {
-    let min
-    let max
-    let count = 0
-    numbers.forEach(number => {
-        // console.log(number)
-        count++
-        if (number < min || min === undefined) {
-            min = number
-        }
-        if (number > max || max === undefined) {
-            max = number
-        }
-
-    })
-    return [min, max, count]
-}
-
-let hignMinMaxNumberOneStepRes = hignMinMaxNumberOneStep([1, 2, 333, 4, 555, -666, 333, 2, 3, 4, 99, -777, 333])
-console.log('hignMinMaxNumberOneStepRes:', hignMinMaxNumberOneStepRes)
 
 let arrUnique = [1, 3, 3, 2, 2]
 

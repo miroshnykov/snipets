@@ -34,8 +34,12 @@ const capitalizeProductsIds = async () => {
       const productId = await getProductId(product);
       console.log('1-',productId);
 
-      const capitalizedId = await capitalizeId(productId)
-      console.log('2-',capitalizedId);
+      if (productId){
+        const capitalizedId = await capitalizeId(productId)
+        console.log('2-',capitalizedId);
+      }
+
+      console.log('3-');
     })
   )
 
